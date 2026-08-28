@@ -1,0 +1,32 @@
+# Python 3.10
+
+# Core data handling
+pandas>=1.5,<3.0
+numpy>=1.23,<2.0
+
+# Modeling: StandardScaler, LogisticRegression (utils.py); plus
+# RandomForestClassifier, SVC, ParameterGrid, StratifiedKFold, RFE,
+# roc_auc_score, roc_curve used by running_cross_validation.py
+scikit-learn>=1.2,<1.6
+
+# Univariate/multivariable logistic regression with CIs (sm.Logit) in
+# run_final_training_pipeline
+statsmodels>=0.13
+
+# mRMR feature selection (mrmr_classif)
+mrmr-selection>=0.2.8
+
+# Forest plots in run_final_training_pipeline / _forest_plot
+matplotlib>=3.6
+seaborn>=0.12
+
+# Model persistence (joblib.dump / joblib.load)
+joblib>=1.2
+
+# Gradient boosting model used in running_cross_validation.py
+xgboost>=1.7
+
+# Notebook execution support (get_model_predictions.ipynb,
+# train_final_logreg_model.ipynb)
+jupyter>=1.0
+ipykernel>=6.0
